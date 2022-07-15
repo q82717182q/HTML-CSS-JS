@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+</body>
+<script>
+    console.log("--------------------------0");
+    class Circle{
+        static pi = 3.1415926;
+
+        constructor(radius){
+            this.radius = radius;
+        }
+        getArea(){
+            return this.radius * this.radius * Circle.pi;
+        }
+        getPerimeter(){
+            return 2 * Circle.pi * this.radius;
+        }
+        //設定成static就對每個Circle而言都是一樣的
+        static getAreaFormula(){
+            console.log("r * r * 3.14");
+        }
+    }
+    let c1 = new Circle(10);
+    console.log(c1.getPerimeter());
+    console.log("--------------------------1");
+    console.log("--------------------------2");
+    console.log("--------------------------3");
+    console.log("--------------------------4");
+</script>
+</html>

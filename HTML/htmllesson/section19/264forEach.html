@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let luckyNumbers = [7, 15, 23, 66, 91, 10, 30];
+    console.log("第一種寫法")
+    // n 一定要寫，代表目前的數字
+    luckyNumbers.forEach(function check(n){
+        if(n > 20){
+            console.log(n);
+        }
+    });
+
+    console.log("第二種寫法 分開寫")
+    luckyNumbers.forEach(chechNumber);
+    //分開寫
+    function chechNumber(num){
+        if(num > 20){
+            console.log(num);
+        }
+    }
+
+    console.log("第三種寫法 省略函式名稱 匿名 anonymous")
+    luckyNumbers.forEach(function(n){
+        if(n > 20){
+            console.log(n);
+        }
+    });
+
+    console.log("第四種寫法 anonymous arrow")
+
+    luckyNumbers.forEach((n) => {
+        if (n > 20) {
+            console.log(n)
+        }
+    })
+
+
+    console.log("介紹index arr")
+    luckyNumbers.forEach((n, index, arr) => {
+        if (n > 20) {
+            console.log(n + " is at index " + index)
+            console.log(arr)
+        }
+    })
+
+
+
+</script>
+</html>

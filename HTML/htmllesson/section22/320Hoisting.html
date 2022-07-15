@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+</body>
+<script>
+   console.log("--------------------------0");
+   //initializer
+//    let x;
+//    const y;
+//    var z;
+   console.log("--------------------------1");
+   //redeclaration
+//    let x = 10;
+//    let x = 20;
+
+//    const x = 10;
+//    const x = 20;
+//    var x = 10;
+//    var x = 20;
+
+
+
+   console.log("--------------------------2");
+   //var會先給記憶體位置所以這邊會顯示undefined，因為他是variable但是還沒被assignment
+   console.log(x);
+   var x = 10;
+
+
+
+   console.log("--------------------------3");
+   //function也跟上面是一樣道理，這就叫做Hoisting，他早就把記憶體分配給hoisting
+   sayHi();
+   function sayHi(){
+       console.log("hi");
+   }
+
+   console.log("--------------------------4");
+   //let, const 都是lexical declaration
+   console.log(y);
+   let y = 10;
+
+
+
+</script>
+</html>

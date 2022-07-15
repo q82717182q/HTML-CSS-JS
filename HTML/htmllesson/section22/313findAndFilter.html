@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .bold{
+            font-weight: bolder;
+        } */
+    </style>
+</head>
+<body>
+</body>
+<script>
+   console.log("--------------------------0");
+   const languagess = [
+       {name: "Python", rating: 9.5, popularity: 9.7, trending: "super hot"},
+       {name: "Java", rating: 8.6, popularity: 8.2, trending: "same"},
+       {name: "C++", rating: 6.6, popularity: 7.7, trending: "same"},
+       {name: "PHP", rating: 2.5, popularity: 4.7, trending: "decreasing"},
+       {name: "JavaScript", rating: 8.5, popularity: 8.1, trending: "super hot"}
+   ];
+   //find會針對每一行去找，回傳第一個，找不到會直接undefined
+   console.log(   languagess.find(lan =>{
+       return lan.rating > 5;
+   }));
+   console.log("--------------------------1");
+   //用filter會得到所有符合條件的，找不到會給空array
+   console.log(   languagess.filter(lan =>{
+       return lan.rating > 5;
+   }));
+   console.log("--------------------------2");
+   console.log(   languagess.find(lan =>{
+       return lan.rating > 15;
+   }));
+   console.log("--------------------------3");
+   console.log(   languagess.filter(lan =>{
+       return lan.rating > 15;
+   }));
+   console.log("--------------------------4");
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <table style="border: solid black; width: 350px;">
+        <img src="./images/loadingBarThin.gif" alt="" style="height: 10px; width: 350px;">
+        <tr><th>國家</th><th>年份</th><th class="error">熊貓</th></tr>
+        <tr><td aria-readonly="true">墨西哥</td><td>1975</td><td class="error">貝貝</td></tr>
+        <tr><td>台灣</td><td>2008</td><td class="error" style="padding: 0px;">團團</td></tr>
+        <tr><td>日本</td><td>2011</td><td class="error">仙女人</td></tr>
+    </table>
+    
+    <table  id="dropdown_result_table_${id}" class="dropdown_table" cellspacing="2" cellpadding="0"  style="width:100%;border-color:white;padding-top:0px;" >
+        <thead>
+            <tr height="22px" style="white-space: nowrap;">
+                <td></td>
+                <td><s:text name="%{#attr.field1_label}"/></td>
+                <td><s:text name="%{#attr.field2_label}"/></td>
+            <%--iterate he additional columns  --%>
+            <c:forEach items="${fn:split(additionalColumns, ',')}" var="columnHeader">
+                <c:if test="${!empty fn:split(columnHeader, ':')[0]}">
+                    <td><c:set var="tempHeader" value="${fn:split(columnHeader, ':')[0]}" scope="page"/><s:text name="%{#attr.tempHeader}"/></td>
+                </c:if>
+            </c:forEach>
+         </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/style/s28style.css">
+</head>
+<body>
+    <h1>You are on the homepage....</h1>
+
+    <h1>L384 Common Programming Language</h1>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>rating</th>
+            <th>popularity</th>
+            <th>trending</th>
+        </tr>
+        <%  languages.forEach(lang =>{ %> 
+            <tr>
+                <td><%= lang.name %></td>
+                <td><%= lang.rating %></td>
+                <td><%= lang.popularity %></td>
+                <td><%= lang.trending %></td>
+            </tr>
+        <% }); %> 
+
+    </table>
+
+
+    <%  languages.forEach(lang =>{ %> 
+        <p><%= lang.name %> </p>
+    <% }); %> 
+
+
+
+
+    <!-- <h1>L383 Simple From</h1>
+    <form action="/response" method="get">
+        <label for="fullname">Name:</label>
+        <input type="text" name="fullname" id="fullname">
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age">
+        <button type="submit">Submit</button>
+    </form> -->
+</body>
+</html>

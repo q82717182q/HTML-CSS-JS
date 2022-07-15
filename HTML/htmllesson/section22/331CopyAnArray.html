@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+</body>
+<script>
+    console.log("--------------------------0");
+    //這樣複製只是參考而已不是真的複製
+    let friends = ["Mike", "Josh"];
+    let copy = friends;
+    copy.push("Jack");
+    console.log(friends);
+    console.log("--------------------------1");
+    //一個簡單的複製方式是直接在宣告一個，但這不是好方法
+    let friends1 = ["Mike", "Josh"];
+    let friends2 = ["Mike", "Josh"];
+    
+    
+    console.log("--------------------------2");
+    //這是比較好的複製方式
+    let friends3 = ["Mike", "Josh"];
+    let friends4 = [...friend3];
+
+
+
+    console.log("--------------------------3");
+    console.log("--------------------------4");
+</script>
+</html>

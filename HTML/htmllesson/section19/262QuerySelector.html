@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="second">My Second h1</h1>
+    <p class="second">My Second h1</p>
+    <p class="second">My Second h1</p>
+
+
+</body>
+<script>
+    //只會找到第一個滿足的對象
+    let e1 = document.querySelector(".second");
+
+    console.log(e1);
+
+    //這個才會到所有符合的對象
+    let e2 = document.querySelectorAll(".second");
+    console.log(e2);
+
+
+    //list也可以直接用INDEX來讀物件
+    //NodeList is not an array
+    console.log(e2[0]);
+    console.log(e2[1]);
+    console.log(e2[2]);
+</script>
+</html>

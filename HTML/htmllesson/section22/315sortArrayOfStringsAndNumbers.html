@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+</body>
+<script>
+    console.log("--------------------------0");
+    let fruits = ["Grapes", "Apple", "Watermelon"];
+    console.log(fruits);
+    //排序，而且他會改變原本的array
+    console.log(fruits.sort());
+    console.log(fruits);
+    //按照字母長度排列
+    fruits.sort((a, b) =>{
+        return b.length - a.length;
+    })
+    console.log(fruits);
+   console.log("--------------------------1");
+   let numbers = [15, 1, 2, 16, 99, 17, 3];
+   //這是按照string comparison，不是按照數字大小
+   console.log(numbers.sort());
+   //這樣才是由小到大排
+   numbers.sort((a, b) => {
+       return a - b ;
+   })
+   console.log(numbers);
+   console.log("--------------------------2");
+   console.log("--------------------------3");
+   console.log("--------------------------4");
+</script>
+</html>

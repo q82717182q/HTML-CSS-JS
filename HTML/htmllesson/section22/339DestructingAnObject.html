@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+</body>
+<script>
+    console.log("--------------------------0");
+    let Jack = {
+        firstName: "Jack",
+        age: 30,
+        gender: "mail",
+        address: "Taipei",
+        weight: 80,
+        friends:{
+            name: "Jacky"
+        }
+    }
+    // let firstName = Jack.firstName;
+    // let gender = Jack.gender;
+    // let friends = Jack.friends.name;
+    // console.log(firstName + "'s gender is " + gender + ".");
+
+    //以上這樣很麻煩，所以這邊用destructing語法
+    let {firstName,gender} = Jack;
+    let {name} = Jack.friends;
+    console.log(firstName + "'s gender is " + gender + ".");
+    console.log(name);
+    console.log("--------------------------1");
+    console.log("--------------------------2");
+    console.log("--------------------------3");
+    console.log("--------------------------4");
+</script>
+</html>

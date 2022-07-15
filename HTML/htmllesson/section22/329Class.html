@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+</body>
+<script>
+   console.log("--------------------------0");
+   //這樣寫法與328一樣
+    class Person {
+        constructor(name, age, height, weight) {
+            this.name = name,
+            this.age = age,
+            this.height = height,
+            this.weight = weight
+        }
+        sayHi() {
+            console.log(this.name + " say hi in class.");
+        }
+        intro() {
+            console.log(this.name + " say hi in class.");
+        }
+    }
+    let Jack =new Person("Jack", 25, 183, 80, "CS", 99);
+
+    let Mike = new Person("Mike", 26, 160, 50, "Paint", 45);
+    console.log(Jack);
+    console.log(Mike);
+
+    //不用特別設定prototype
+    console.log(Jack.sayHi === Mike.sayHi);
+    console.log("--------------------------1");
+    class Student extends Person{
+        constructor(name, age, height, weight, major, grade){
+            super(name, age, height, weight);
+            this.major = major,
+            this.grade = grade
+        }
+        study(){
+            console.log(this.name + " is study now. ");
+        }
+    }
+    
+    let Wilson = new Student("Wilson Ren", 25, 179, 75, "CS", 3.85);
+    Wilson.study();
+    Wilson.sayHi();
+
+
+    console.log("--------------------------2");
+    console.log("--------------------------3");
+    console.log("--------------------------4");
+</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .bold{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+</body>
+<script>
+   console.log("--------------------------0");
+   console.log(window);
+   console.log(window.localStorage);
+   console.log(window.sessionStorage);
+
+   console.log(localStorage);
+   console.log(sessionStorage);
+   console.log(typeof localStorage);
+   console.log(typeof sessionStorage);
+   console.log("--------------------------1");
+   //    localStorage.setItem("name","Jack");
+   //設定上去之後就會存在，沒有特別remove的話還是可以印出來
+    //這樣可以看，但是通常會在瀏覽器直接看  
+   console.log(localStorage);
+   console.log("--------------------------2");
+   localStorage.removeItem("name");
+   console.log(localStorage);
+   console.log("--------------------------3");
+   //全部清掉
+   localStorage.clear();
+
+   console.log("--------------------------4");
+   
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="first">My first h1</h1>
+    <p class="second">This is a paragraph</p>
+    <p class="second">This is another paragraph</p>
+</body>
+<script>
+    let body = document.querySelector("body");
+    console.log("body");
+    console.log(body);
+    console.log("body.children");
+    console.log(body.children); // return HTMLCollection
+    console.log("body.childNodes");
+    console.log(body.childNodes); // return NodeList
+
+    let myP = document.querySelector("p.second");
+    console.log("myP");
+    console.log(myP);
+    console.log("myP.parentElement");
+    console.log(myP.parentElement); //return body tag
+    console.log(myP.parentElement.parentElement); //return html tag
+</script>
+</html>

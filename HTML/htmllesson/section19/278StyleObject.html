@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .bold{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>hihihi</h1>
+    <form action="">
+        <input type="text">
+        <!-- button在form裡面他的預設就是submit -->
+        <button id="btn1" type="submit">submit the form</button>
+    </form>
+</body>
+<script>
+   console.log("--------------------------0");
+   let btn1 = document.querySelector("#btn1");
+   console.log(btn1.style); 
+
+   console.log("--------------------------1");
+   console.log(btn1)
+//    btn1.style.backgroundColor = "black";
+//    btn1.style.color = "white";
+   console.log("--------------------------2");
+// 這樣也可以
+//    btn1.style = "background-color: black; color: white;";
+   console.log("--------------------------3");
+   //不要任何style可以這樣寫
+   btn1.style = "";
+   console.log("--------------------------4");
+</script>
+</html>

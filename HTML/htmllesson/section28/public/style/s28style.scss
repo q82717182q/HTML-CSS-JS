@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(219, 18, 18);
+    color: white;
+}
+
+
+table, tr, th, td{
+    border:1px solid white;
+    border-collapse: collapse;
+  }
+  
+  th{
+    text-align: center;
+  }
+  
+  tr, th, td {
+    padding: 0.25rem 0.5rem;
+  }
+  

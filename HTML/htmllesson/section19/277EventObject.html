@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .bold{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>hihihi</h1>
+    <form action="">
+        <input type="text">
+        <!-- button在form裡面他的預設就是submit -->
+        <button id="btn1" type="submit">submit the form</button>
+    </form>
+</body>
+<script>
+   console.log("--------------------------0");
+   let h1 = document.querySelector("h1");
+   //這樣點h1就有反應
+   h1.addEventListener("click", e => {
+       console.log(e);
+       console.log("--------------------------1");
+       console.log(e.target);
+       console.log("--------------------------2");
+       console.log(e.target.innerHTML);
+       console.log("--------------------------3");
+       console.log(e.target.parentElement);
+       console.log("--------------------------4");
+    })
+    
+    let button = document.querySelector("#btn1");
+    console.log(button);
+    button.addEventListener("click", e =>{
+        //這樣就讓這button的submit失效了
+        e.preventDefault();
+    })
+    console.log("--------------------------5");
+    console.log("--------------------------6");
+
+</script>
+</html>

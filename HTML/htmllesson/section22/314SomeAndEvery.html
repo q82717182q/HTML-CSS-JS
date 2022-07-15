@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .bold{
+            font-weight: bolder;
+        } */
+    </style>
+</head>
+<body>
+</body>
+<script>
+   console.log("--------------------------0");
+   const languagess = [
+       {name: "Python", rating: 9.5, popularity: 9.7, trending: "super hot"},
+       {name: "Java", rating: 8.6, popularity: 8.2, trending: "same"},
+       {name: "C++", rating: 6.6, popularity: 7.7, trending: "same"},
+       {name: "PHP", rating: 2.5, popularity: 4.7, trending: "decreasing"},
+       {name: "JavaScript", rating: 8.5, popularity: 8.1, trending: "super hot"}
+   ];
+   console.log("--------------------------1");
+   //符合一個就回true
+   console.log(languagess.some(lang =>{
+       return lang.rating > 9.4;
+   }));
+   console.log("--------------------------2");
+   //全部符合才回true
+   console.log(languagess.every(lang =>{
+       return lang.rating > 2.4;
+   }));
+   console.log(languagess.every(lang =>{
+       return lang.rating > 2.5;
+   }));
+   console.log("--------------------------3");
+   console.log("--------------------------4");
+</script>
+</html>

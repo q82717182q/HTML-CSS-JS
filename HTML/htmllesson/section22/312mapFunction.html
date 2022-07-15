@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .bold{
+            font-weight: bolder;
+        } */
+    </style>
+</head>
+<body>
+</body>
+<script>
+   console.log("--------------------------0");
+   let languages = ["Java", "C++", "Python", "JavaScript"];
+   let upperLanguage = languages.map(function(i) {
+       return i.toUpperCase();
+   });
+   console.log(upperLanguage);
+
+   console.log("--------------------------1");
+   let upperLanguage1 = languages.map(i => {
+       return i.toUpperCase();
+   })
+   console.log(upperLanguage1);
+   console.log("--------------------------2");
+   const languagess = [
+       {name: "Python", rating: 9.5, popularity: 9.7, trending: "super hot"},
+       {name: "Java", rating: 8.6, popularity: 8.2, trending: "same"},
+       {name: "C++", rating: 6.6, popularity: 7.7, trending: "same"},
+       {name: "PHP", rating: 2.5, popularity: 4.7, trending: "decreasing"},
+       {name: "JavaScript", rating: 8.5, popularity: 8.1, trending: "super hot"}
+   ];
+   console.log(   languagess.map(lan =>{
+       return lan.name.toUpperCase();
+   }));
+   console.log(   languagess.map(lan =>{
+       return lan.trending.toUpperCase();
+   }));
+
+   
+
+
+   console.log("--------------------------3");
+   console.log("--------------------------4");
+</script>
+</html>

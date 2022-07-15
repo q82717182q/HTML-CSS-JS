@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊貓問卷調查</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <p>lor</p>
+
+
+    <!--這是熊貓問卷-->
+    <form action="" method="">
+        <h1>&#9837;</h1>
+        <h1 id="thisIsh1">This is h1.</h1>
+        <label for="name" style="color: green;">姓名</label>
+        <input id="name" type="" name="inputName" value="Catherine"/>
+        <br>
+        <label for="selectGender" class="gender">性別：</label>
+        <select name="selectGender" id="selectGender" >
+            <option ></option>
+            <option value="male">男性</option>
+            <option value="female">女性</option>
+            <option value="other">其他</option>
+        </select>
+        </select>
+    
+        <br>
+        <label for="tele">電話</label>
+        <input id="tele" type="" name="telephone" />
+        <br>
+        <label for="email">信箱</label>
+        <input id="email" type="email" name="email" >
+        <br>
+        <input type="checkbox" name="news" value="subscribe" >
+        <label for="">訂閱熊貓電子報</label>
+        <br>
+        <!--這是datalist範例-->
+        <label for="area">地區：</label>
+        <input list="areaList" type="text" id="area" >
+        <datalist id="areaList">
+            <option value="台北市">台北</option>
+            <option value="台中市">台中</option>
+            <option value="台南市">台南</option>
+            <option value="新北市">新北</option>
+            <option value="高雄市">高雄</option>
+        </datalist>
+        <br>
+        <label for="suggestion">給網站的建議：</label>
+        <br>
+        <textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="感謝提供建議!">
+
+        </textarea>
+        <!-- <label for="password">密碼</label>
+        <input type="password" name="password" id="myPassword" >
+        <input type="checkbox" onclick="clickShow()"> -->
+        <br>
+        <a href="https://www.w3schools.com/html/html_blocks.asp">w3schools</a>
+        <a href="https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/div">mdn</a>
+
+        <br>
+        <br>
+        <hr>
+
+
+        <div>
+            <a href="https://www.w3schools.com/html/html_blocks.asp">w3schools</a>
+        </div>
+        <div>
+            <a href="https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/div">mdn</a>
+        </div>
+
+        <br>
+        <button type="submit">提交表單</button>
+        <br>
+        0<input type="range" name="" min="0" max="100"  value="">100
+        <br>
+
+        <img src="" alt="">
+
+
+
+        <!-- <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">男性</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">女性</label>       
+        <input type="radio" name="gender" id="otherMale" value="otherMale">
+        <label for="otherMale">其他</label> -->
+   
+   
+   
+    </form>
+
+
+<script>
+function clickShow(){
+    var x = document.getElementById("myPassword");
+    if(x.type === "password"){
+        x.type = "text";
+    }else{
+        x.type = "password";
+    }
+}
+
+
+</script>
+
+</body>
+</html>

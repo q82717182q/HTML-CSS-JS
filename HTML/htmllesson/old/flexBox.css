@@ -1,0 +1,34 @@
+
+div.container{
+    border: solid black 5px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+.box{
+    width: 100px;
+
+}
+
+.block1{
+    background-color: rgb(157, 0, 255);
+        /* grow, shrink, basis */
+        flex: 3 1 200px;
+}
+.block2{
+    background-color: green;
+        /* grow, shrink, basis */
+        flex: 1 1 200px;
+}
+.block3{
+    background-color: yellow;
+}
+.block4{
+    background-color: blue;
+}
+.block5{
+    background-color: violet;
+}

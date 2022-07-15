@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+</body>
+<script>
+    console.log("--------------------------0");
+    //給預設值
+    function multiply(a, b){
+        //以前的作法
+        if(a == undefined){
+            a = 1;
+        }
+        if(b == undefined){
+            b = 1;
+        }
+        console.log(a);
+        console.log(b);
+        console.log(a * b);
+    }
+    multiply(5);
+    
+    
+    console.log("--------------------------1");
+    function multiply1(a = 1, b = 1){
+        //新的作法
+        console.log(a);
+        console.log(b);
+        console.log(a * b);
+    }
+    multiply1(5);
+    console.log("--------------------------2");
+    console.log("--------------------------3");
+    console.log("--------------------------4");
+</script>
+</html>

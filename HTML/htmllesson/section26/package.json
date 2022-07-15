@@ -1,0 +1,17 @@
+{
+  "name": "section26",
+  "version": "1.0.0",
+  "description": "This is for learninig npm and node.js",
+  "main": "section26.js",
+  "scripts": {
+    "myapp": "node section26.js"
+  },
+  "author": "Jaco Yao",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

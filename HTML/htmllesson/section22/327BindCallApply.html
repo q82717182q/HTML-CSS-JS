@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+</body>
+<script>
+   console.log("--------------------------0");
+   function hello(){
+
+   }
+   //不給小括號就是看function本身，而不是呼叫這方法
+   console.log(hello);
+
+   console.log("--------------------------1");
+//    let Jack = {
+//        name: 'Jack',
+//        age: 25
+//    }
+
+//    function getAge(){
+//        console.log(this);
+//        console.log(this.age);
+//    }
+//    //bind可以綁定this會回傳一個variable所以要用參數接他
+//    let getJackAge = getAge.bind(Jack);
+//    getJackAge();
+
+   console.log("--------------------------2");
+//    let Jack = {
+//        name: 'Jack',
+//        age: 25
+//    }
+
+//    function getAge(country, height){
+//        console.log(this);
+//        console.log(this.age);
+//        console.log("I am from " + country + ". I am " + height + " cm.");
+//    }
+//    //call不會回傳，所以直接用就好，有參數直接逗號在後面即可，
+//    getAge.call(Jack, "Taiwan", 183);
+
+   console.log("--------------------------3");
+   let Jack = {
+       name: 'Jack',
+       age: 25
+   }
+
+   function getAge(country, height){
+       console.log(this);
+       console.log(this.age);
+       console.log("I am from " + country + ". I am " + height + " cm.");
+   }
+   //call不會回傳，所以直接用就好，有參數直接逗號在後面即可，
+   getAge.apply(Jack, ["Taiwan", 183]);
+
+   console.log("--------------------------4");
+</script>
+</html>

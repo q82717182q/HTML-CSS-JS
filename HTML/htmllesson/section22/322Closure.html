@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+</body>
+<script>
+   console.log("--------------------------0");
+   //closure 如果block裡面沒有宣告該參數，就會優先找global scope的參數
+   let name = "Jack";
+   function sayHi(){
+       let name = "Catherine";
+       console.log(name + " says hi.");
+       sayHi2();
+   }
+
+   function sayHi2(){
+       console.log(name + " says hello.");
+   }
+
+   sayHi();
+
+   console.log("--------------------------1");
+   function sayHi(){
+       console.log(name + " says hiiii.");
+       
+       function sayHi2(){
+           console.log(name + " says hello.");
+        }
+        function sayHi3(){
+              let name = "Catherine";
+              console.log(name + " says helloooo.");
+              sayHi2();
+          }
+          sayHi3();
+   }
+
+   sayHi();
+   console.log("--------------------------2");
+   console.log("--------------------------3");
+   console.log("--------------------------4");
+</script>
+</html>

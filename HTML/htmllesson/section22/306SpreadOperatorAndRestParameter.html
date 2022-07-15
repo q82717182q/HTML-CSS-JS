@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .bold{
+            font-weight: bolder;
+        } */
+    </style>
+</head>
+<body>
+</body>
+<script>
+   console.log("--------------------------0");
+   //像這樣可以隨意給參數的方法
+   console.log(Math.max(5,7,4,6));
+   console.log("--------------------------1");
+   function checkMax(...numbers){
+       console.log(numbers);
+       let maxNumber = -Infinity;
+       for (let i = 0; i < numbers.length; i++) {
+           if (numbers[i] > maxNumber) {
+               maxNumber = numbers[i];
+           }
+       }
+       return maxNumber;
+   }
+   console.log(checkMax(2,4,6,6,3,23,1234));
+   console.log(checkMax(2,4,6,6,3,23555,555,1234));
+   console.log(checkMax(2,4,6,6,3,2323232323232323,1234));
+   console.log("--------------------------2");
+   //除了concat這個spread operator也可以串array
+   let friend1 = ["Mike", "Josh", "Doug"];
+   let friend2 = ["Mikey", "Joshy", "Dougy"];
+   let friends = [...friend1, ...friend2];
+   console.log(friends);
+
+   console.log("--------------------------3");
+   console.log("--------------------------4");
+</script>
+</html>
